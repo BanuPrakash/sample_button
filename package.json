@@ -1,0 +1,29 @@
+{
+  "name": "sample_button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "repository": "git@github.com:BanuPrakash/sample_button.git",
+  "scripts": {
+    "start": "docz dev",
+    "build:lib": "babel src --out-dir lib",
+    "build:docs": "docz build",
+    "deploy": "npm run build:lib && npm run build:docs && gh-pages -d .docz/dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
+    "docz": "^2.4.0",
+    "react": "^16.14.0"
+  }, 
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  }
+}
